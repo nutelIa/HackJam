@@ -1,0 +1,7 @@
+<h1 style="color:red"> Welcome to Name Generator! </h1>
+
+<%= form_tag stringify_path do %>
+  <%= label_tag :first_name, "Your first name here!" %>
+  <%= text_area_tag :first_name %>
+  <%= submit_tag "Generate Name!" %>
+<% end %>
