@@ -1,7 +1,37 @@
-<h1 style="color:red"> Welcome to Name Generator! </h1>
+<head>
+<style media = 'screen' type = 'text/css'>
 
-<%= form_tag stringify_path do %>
-  <%= label_tag :first_name, "Your first name here!" %>
-  <%= text_area_tag :first_name %>
-  <%= submit_tag "Generate Name!" %>
+h1 {
+  text-align: center;
+  font-family: courier;
+}
+
+body {
+  background-color:#ECFAEC;
+}
+
+.boxed {
+  border: 5px solid #6A828B;
+  padding: 25px;
+  background-color: #E7F1F5;
+}
+
+</style>
+</head>
+
+<body>
+<h1 class='cover' style="color:#6A828B"> Welcome to Name Generator! </h1>
+
+<h1>
+<div class = 'boxed'>
+<%= form_tag ghetto_path do %>
+  <%= text_area_tag :first_name, "Your First Name" %>
+  <%= submit_tag "Generate Ghetto Name!" %>
 <% end %>
+<%= form_tag ninja_path do %>
+  <%= text_area_tag :first_name, "Your First Name" %>
+  <%= submit_tag "Generate Ninja Name!" %>
+<% end %>
+</div>
+</h1>
+</body>
