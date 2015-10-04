@@ -3,35 +3,67 @@
 
 h1 {
   text-align: center;
-  font-family: courier;
+  font-family: 'Comic Sans MS';
+  text-shadow: 3px 3px #FFDAF6;
 }
 
 body {
-  background-color:#ECFAEC;
+  /*background-color:#ECFAEC;*/
+  background-image: url('https://s-media-cache-ak0.pinimg.com/236x/5e/eb/b7/5eebb709baa68ed2bcede64004a14900.jpg');
 }
 
 .boxed {
   border: 5px solid #6A828B;
   padding: 25px;
   background-color: #E7F1F5;
+  box-shadow: 4px 4px #A7CCDA;
+}
+
+.boxed2 {
+  border: 2px solid #6A828B;
+  padding: 25px;
+  background-color: #F7FAFC;
 }
 
 </style>
 </head>
 
 <body>
-<h1 class='cover' style="color:#6A828B"> Welcome to Name Generator! </h1>
+  <h1 class='cover' style="color:#A22082"> Welcome to Name Generator! </h1>
 
-<h1>
-<div class = 'boxed'>
-<%= form_tag ghetto_path do %>
-  <%= text_area_tag :first_name, "Your First Name" %>
-  <%= submit_tag "Generate Ghetto Name!" %>
-<% end %>
-<%= form_tag ninja_path do %>
-  <%= text_area_tag :first_name, "Your First Name" %>
-  <%= submit_tag "Generate Ninja Name!" %>
-<% end %>
-</div>
-</h1>
+  <h1>
+    <div class = 'boxed'>
+      <div class = 'boxed2'>
+        <%= form_tag gangster_path do %>
+          <%= text_area_tag :first_name, "Your Name" %>
+          <%= submit_tag "Generate Gangster Name!" %>
+          <img src ="http://cliparts.co/cliparts/ATb/K76/ATbK76qyc.gif" height='60px' width = '40px' />
+        <% end %>
+      </div>
+    <div class = 'boxed2'>
+      <%= form_tag ninja_path do %>
+        <img src ="http://1.viki.io/d/1863c/8b75dc48c9.gif" height='60px' width = '80px' />
+        <%= text_area_tag :first_name, "Your Name" %>
+        <%= submit_tag "Generate Ninja Name!" %>
+      <% end %>
+      </div>
+    <div class = 'boxed2'>
+      <%= form_tag dog_path do %>
+        <%= select_tag(:gender, options_for_select([['Male',1],['Female',2]])) %>
+        <%= text_area_tag :first_name, "First Name Initial" %>
+        <%= text_area_tag :last_name, "Last Name Initial" %>
+        <%= submit_tag "Generate Pretentious Dog Name!" %>
+        <img src ="http://dogbreedinfo.us/images/Dog.gif" height='60px' width = '55px' />
+      <% end %>
+      </div>
+    <div class = 'boxed2'>
+      <%= form_tag werewolf_path do %>
+        <img src ="http://static.fjcdn.com/pictures/Dammit+moon+moon+oh+moon+moon_c67718_4562382.png" height='120px' width = '180px' />
+        <%= text_area_tag :first_name, "First Name Initial" %>
+        <%= text_area_tag :last_name, "Last Name Initial" %>
+        <%= submit_tag "Generate Werewolf Name!" %>
+      <% end %>
+      </div>
+    </div>
+  </h1>
 </body>

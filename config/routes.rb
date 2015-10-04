@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   root 'pages#home'
-  post 'ghetto', to: 'pages#ghetto'
+  post 'gangster', to: 'pages#gangster'
   post 'ninja', to: 'pages#ninja'
+  post 'dog', to: 'pages#dog'
+  post 'werewolf', to: 'pages#werewolf'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

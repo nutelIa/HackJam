@@ -1,0 +1,49 @@
+<head>
+
+<style media = 'screen' type = 'text/css'>
+
+img {
+	width: 200px;
+	height: 200px;
+}
+.name {
+	font-family: 'Arvo', serif;
+}
+.cover {
+	text-align: center;
+	font-family: 'Arvo', serif;
+	color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    line-height: 15em;
+}
+.random {
+	margin: 0 auto;
+	width: 600px;
+	background-color: #D6D3DB;
+	font-family: 'Arvo', serif;
+	padding: 20px 6px;
+	border-radius: 3%;
+}
+</style>
+
+	<title>Werewolf Name</title>
+	<style>
+	body {
+		background-image: url("https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12138481_847770325320794_9044768570476113122_o.jpg");
+		background-color: #cccccc;
+	}
+	</style>
+	<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="cover">
+		<h1 class="name"><font size='20'>Werewolf Name Generator</h1>
+	</div>
+	<div class="random">
+		<p1><font size="5">Your werewolf name is <%= @first.capitalize %> <%= @last.capitalize %></font></p1>
+	</div>
+</body>

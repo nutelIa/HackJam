@@ -1,1 +1,46 @@
-<p><%= @first.capitalize%>, your ninja name is <%= @text.capitalize %></p>
+<head>
+<style media = 'screen' type = 'text/css'>
+/*body {
+	background-color: gray;
+}*/
+.link {
+	padding: 10px 400px;
+	color: white;
+}
+
+.cover {
+	text-align: center;
+	background-image: url("http://www.tiny-ninja.com/layout/ninja.png");
+	width: 1000px;
+	height: 700px;
+	background-position: 200px 150px;
+	background-repeat: no-repeat;
+	color: Red;
+}
+
+.original_name {
+	font-family: "Comic Sans MS";
+	color: black;
+}
+.new_name {
+	font-family: "Comic Sans MS";
+	color: #4B0082;
+}
+
+.boxed {
+  border: 5px solid #8C5DAF;
+  padding: 25px;
+  background-color: #DED1E8;
+  box-shadow: 4px 4px #DED1E8;
+}
+
+</style>
+
+<title>What's your ninja name?</title>
+</head>
+<body link = "white" background ='http://1.bp.blogspot.com/-uhCqE3LElYI/UymXeOqKXTI/AAAAAAAAMJg/Nts0kcDNlPc/s1600/CLA018_BACK.jpg'>
+	<div class="cover">
+		<h5 class="original_name">Your Name: <%= @first.capitalize%></h1>
+		<h2 class="new_name boxed">Ninja Name: <%= @text.capitalize %></h1>
+	</div>
+</body>
