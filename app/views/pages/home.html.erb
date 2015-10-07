@@ -35,7 +35,7 @@ body {
     <div class = 'boxed'>
       <div class = 'boxed2'>
         <%= form_tag gangster_path do %>
-          <%= text_area_tag :first_name, "Your Name" %>
+          <%= text_field_tag 'first_name', nil,  placeholder: "Your Name" %>
           <%= submit_tag "Generate Gangster Name!" %>
           <img src ="http://cliparts.co/cliparts/ATb/K76/ATbK76qyc.gif" height='60px' width = '40px' />
         <% end %>
@@ -43,15 +43,15 @@ body {
     <div class = 'boxed2'>
       <%= form_tag ninja_path do %>
         <img src ="http://1.viki.io/d/1863c/8b75dc48c9.gif" height='60px' width = '80px' />
-        <%= text_area_tag :first_name, "Your Name" %>
+        <%= text_field_tag 'first_name', nil, placeholder: "Your Name" %>
         <%= submit_tag "Generate Ninja Name!" %>
       <% end %>
       </div>
     <div class = 'boxed2'>
       <%= form_tag dog_path do %>
         <%= select_tag(:gender, options_for_select([['Male',1],['Female',2]])) %>
-        <%= text_area_tag :first_name, "First Name Initial" %>
-        <%= text_area_tag :last_name, "Last Name Initial" %>
+        <%= text_field_tag 'first_name',nil,placeholder: "First Name Initial" %>
+        <%= text_field_tag 'last_name',nil,placeholder: "Last Name Initial" %>
         <%= submit_tag "Generate Pretentious Dog Name!" %>
         <img src ="http://dogbreedinfo.us/images/Dog.gif" height='60px' width = '55px' />
       <% end %>
@@ -59,8 +59,8 @@ body {
     <div class = 'boxed2'>
       <%= form_tag werewolf_path do %>
         <img src ="http://static.fjcdn.com/pictures/Dammit+moon+moon+oh+moon+moon_c67718_4562382.png" height='120px' width = '180px' />
-        <%= text_area_tag :first_name, "First Name Initial" %>
-        <%= text_area_tag :last_name, "Last Name Initial" %>
+        <%= text_field_tag 'first_name',nil,placeholder: "First Name Initial" %>
+        <%= text_field_tag 'last_name',nil,placeholder: "Last Name Initial" %>
         <%= submit_tag "Generate Werewolf Name!" %>
       <% end %>
       </div>
